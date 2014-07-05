@@ -6,6 +6,9 @@
 # Gradle
 .gradle/
 
+# Build-files
+build/
+
 # Package Files #
 *.jar
 *.war
