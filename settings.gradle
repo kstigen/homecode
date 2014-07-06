@@ -1,1 +1,1 @@
-include "homecode-common", "homecode-services", "homecode-web", "homecode-server"
+include "homecode-domain", "homecode-common", "homecode-services", "homecode-web", "homecode-server"
