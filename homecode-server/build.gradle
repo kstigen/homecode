@@ -1,1 +1,8 @@
-apply plugin: 'java'
+dependencies {
+    compile project(':homecode-common')
+    compile 'org.eclipse.jetty:jetty-server:9.2.1.v20140609'
+    compile 'org.eclipse.jetty:jetty-http-spi:9.2.1.v20140609'
+    compile 'org.eclipse.jetty:jetty-servlet:9.2.1.v20140609'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.6'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.6'
+}
