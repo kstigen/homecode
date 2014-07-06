@@ -9,6 +9,7 @@ public class HomecodeProperties {
 
     enum EProperties{
         BIND_PORT("homecode.bind_port"),
+        WWW_ROOT("homecode.www_root"),
         MAX_REQUESTS("homecode.max_requests"),
         CONFIG_FILE("homecode.config_file");
 
@@ -31,6 +32,10 @@ public class HomecodeProperties {
         }
 
         return properties.getProperty(property.getValue());
+    }
+
+    public static int getInt(EProperties property){
+        return Integer.valueOf(get(property));
     }
 
     private static Properties loadProperties(String filename) {
