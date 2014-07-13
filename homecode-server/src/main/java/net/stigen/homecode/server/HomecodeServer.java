@@ -34,7 +34,7 @@ public class HomecodeServer {
         resource_handler.setResourceBase(HomecodeProperties.get(WWW_ROOT));
 
         ServletHolder sh = new ServletHolder(ServletContainer.class);
-        sh.setInitParameter("javax.ws.rs.Application", "net.stigen.homecode.services.HomecodeServices");
+        sh.setInitParameter("javax.ws.rs.Application", "net.stigen.homecode.server.HomecodeServices");
         sh.setInitParameter("com.sun.jersey.api.json.POJOMappingFeature", "true");
 
         ServletContextHandler servletContextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);

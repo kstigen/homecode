@@ -1,5 +1,4 @@
 dependencies {
-    compile project(':homecode-domain')
     compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.6'
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.6'
     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.6'
